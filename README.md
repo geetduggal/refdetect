@@ -25,7 +25,7 @@ python setup.py install
 From command line within module directory:
 
 ```
-refdetect bams-compressable/b37/SRR100022_chrom21_mapped_to_b37.bam
+refdetect <bam file on platform>
 ```
 
 In a python script:
@@ -33,7 +33,7 @@ In a python script:
 ```python
 import refdetect
 
-ref_file_id = refdetect.get_reference_id("bams-compressable/b37/SRR100022_chrom21_mapped_to_b37.bam")
+ref_file_id = refdetect.get_reference_id("<bam file on platform>")
 ```
 
 If a reference is not found a Python exception will be thrown.
@@ -41,7 +41,7 @@ If a reference is not found a Python exception will be thrown.
 ## Adding a new reference to the module
 
 ```
-$ refdetect bams-compressable/b37/SRR100022_chrom21_mapped_to_b37.bam --refname=b37 --refid=file-XXX
+$ refdetect <BAM file on platform> --refname=b37 --refid=file-XXX
 ```
 
 In a python script:
@@ -49,7 +49,7 @@ In a python script:
 ```python
 import refdetect
 
-ref_file_id = refdetect.write_ref_metadata("bams-compressable/b37/SRR100022_chrom21_mapped_to_b37.bam", "b37", "file-XXX")
+ref_file_id = refdetect.write_ref_metadata("<bam file on platform>", "b37", "file-XXX")
 ```
 
 ## Contributors
