@@ -4,7 +4,7 @@ Given an input bam file path or file ID, this module allows a DNAnexus user to o
 
 ## Currently supported genomes
 
-This list is intended to expand, but for our MVP of the compression utility, we will focus on these human genomes:
+This list is intended to expand, but we currently focus on these genomes:
 
 * GRCh37 (b37)
 * GRCh37 (hs37d5)
