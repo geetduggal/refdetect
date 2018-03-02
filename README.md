@@ -20,14 +20,6 @@ Please see https://wiki.dnanexus.com/Scientific-Notes/human-genome for more info
 python setup.py install
 ```
 
-## Using refdetect in a Python DNAnexus applet
-
-You can simply include this source code, but as an alternative, you can also include this asset and you should be able to `import refdetect` immediately:
-
-```
-record-F2BQ6yQ0BF9zPJ7P7P0g4Bxg
-```
-
 ## Examples
 
 From command line within module directory:
